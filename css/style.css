@@ -3,16 +3,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    background-color: black;
 
 }
 
+body{
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+
+}
 /* header stile--------------------------------------------------------- */
 header{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: end;
     gap: 0.5rem;
+
 }
 
 header div{
@@ -27,10 +32,14 @@ header div{
 .speaker *, header div>i{
     background-color: grey;
 }
-/* header stye fine-------------------------------------------------------- */
+/* header style fine-------------------------------------------------------- */
+
+
+/* inizio main style---------------------------------------------------------- */
 main{
-    height: 100vh;
+    height: 85vh;
     width: 100%;
+
 }
 
 section{
@@ -38,4 +47,82 @@ section{
     width: 80%;
     height: 80vh;
     margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.video-call{
+    border: 1px dashed white;
+    width: calc(100% / 7 - 0.5rem );
+    height: calc(100% / 5 - 0.5rem);
+    background-image: url(https://picsum.photos/200/300);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+}
+
+.mic-user{
+    color: white;
+    display: flex;
+}
+
+.mic-user *{
+background-color: rgba(65, 46, 46, 0.5);
+padding: 0.3rem;
+}
+
+/* FINE MAIN STYLE--------------------------------------------------- */
+
+
+/* FOOTER STYLE------------------------------------------------------- */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+    height: 5vh;
+    width: 100%;
+
+}
+
+footer *{
+    /* position: fixed; */
+    color: white;
+}
+
+.input-mic{
+    display: flex;
+    border: 1px dashed white;
+}
+
+.mic-button{
+    border: 1px dashed white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-video{
+    display: flex;
+}
+.muting-option{
+    display: flex;
+}
+
+.footer-center{
+    display: flex;
+}
+
+.footer-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(74, 74, 74);
+}
+
+.footer-right p{
+    color: red;
+    padding: 1rem;
 }
