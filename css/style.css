@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: black;
+
+}
+
+/* header stile--------------------------------------------------------- */
+header{
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+header div{
+    background-color: grey;
+    color: white;
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 15%;
+    gap: 0.5rem;
+}
+
+.speaker *, header div>i{
+    background-color: grey;
+}
+/* header stye fine-------------------------------------------------------- */
+main{
+    height: 100vh;
+    width: 100%;
+}
+
+section{
+    border: 1px dashed white;
+    width: 80%;
+    height: 80vh;
+    margin: 2rem auto;
+}
